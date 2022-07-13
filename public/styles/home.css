@@ -1,0 +1,365 @@
+
+/* HEADER */
+header .green-line{
+  text-align: center;
+  background-color: var(--dark-green);
+  padding: .4rem 0;
+}
+
+header .green-line span{
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0 .4rem;  
+}
+
+header .nav{  
+  padding-top: 1.3rem;
+  padding-bottom: 1.1rem;
+  background-color: var(--light-gray);
+}
+
+header .nav-bar{  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 1.3rem 0 .9rem 0; */  
+}
+
+header .logo{
+  width: 11.5rem;
+}
+
+header .search input{
+  width: 69.4rem;
+  padding: 1rem 0 .9rem 1.2rem;
+  border: 1px solid #E7E7E7;
+  border-radius: 20px;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  
+}
+header .search input::placeholder{  
+  color: var(--light-black);
+}
+
+header .nav-bar .link{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--dark-green);  
+  transition: 0.1s;
+}
+
+header .nav-bar .link:hover{
+  padding: 1.3rem 1.1rem;
+  border: 1px solid var(--yellow);
+  border-radius: 6px;
+  color: var(--black);
+}
+
+header .categories{
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0 , 0, 0, 0.26);
+}
+
+header .categories .cat{
+  display: flex;
+  justify-content: space-between;
+}
+
+header .categories .cat span{
+  color: --black;
+  font-size: 1.4rem;
+  padding: 1.4rem 0;
+}
+
+header .categories .cat span a{
+  padding-left: .7rem;
+  cursor: pointer;
+  color: var(--green);
+}
+
+header .categories .cat span a:hover{
+  color: var(--dark-green); /* verificar hover */
+}
+
+.info{
+  padding-top: 1.5rem;
+}
+
+.info .slide-parallax img{
+  width: 100%;
+}
+
+.info .cards-info{
+  display: flex;
+  justify-content: space-between;  
+  
+  margin-top: 1.6rem;
+  padding: 2.1rem 6rem;
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0 , 0, 0, 0.26); 
+  border-radius: 10px;
+}
+
+.info .card-info{
+  display: flex;    
+  align-items: center;    
+}
+
+.info .cards-info .card-info span{
+  margin-left: 1.4rem;
+}
+
+.info .card-info:nth-child(-n + 2){
+  margin-right: 26rem;  
+}
+
+.products-content{
+  padding-top: 2.9rem;     
+}
+
+.products .product-text {
+  display: flex;
+  align-items: center;
+}
+
+.products .product-text h2{
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-right: 2.1rem;
+}
+
+.products .product-text a{
+  color: var(--green);
+  font-size: 1.8rem;
+}
+
+.products .product-content{
+  display: flex;  
+  justify-content: space-between;
+  position: relative;  
+  padding-top: 2.6rem;
+  
+}
+
+.products .product-content .card-product{    
+  width: 22.5rem;  
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14);
+  border-radius: 10px;    
+}
+
+.products .card-product .card-product-body{
+  margin: 1.6rem;
+}
+
+.products .card-product .card-product-body p{
+  margin-bottom: 5.2rem;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.products .card-product .card-product-body .price{
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.2rem;    
+}
+
+.products .card-product .card-product-body span:nth-child(1){
+  font-size: 2.1rem;
+  color: var(--green);
+  padding-right: .4rem;
+  font-weight: 400;  
+}
+
+.products .card-product .card-product-body  span:nth-child(2){
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 400;  
+}
+
+.products .more-itens{
+  padding-top: 3.9rem;
+  display: flex;  
+  justify-content: center;  
+}
+
+.testimonial {
+  padding-top: 10.9rem;
+ }
+
+.testimonial .text-testimonial {
+  text-align: center;  
+  font-weight: 400;
+  color: var(--black);  
+}
+
+.testimonial .text-testimonial h2{
+  font-size: 3.2rem;
+}
+
+.testimonial .text-testimonial p{
+  padding: 2.4rem 0 4.8rem;
+  font-size: 1.4rem;
+}
+
+.testimonial .testimonials{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-width: 100%;  
+  padding-top: 4.8rem;
+}
+
+.testimonial .testimonials .card-testimonial{
+  width: 269px;
+  height: 158px;  
+  padding-left: .8rem;
+  border-left: 6px solid var(--yellow);
+}
+  
+.testimonial .testimonials .card-testimonial blockquote p{  
+  font-size: 1.4rem;
+  text-align: left;  
+}
+.testimonial .testimonials .card-testimonial p:nth-child(2){  
+  font-size: 1.8rem;
+  padding-top: 3.2rem;
+}
+
+.attendances{
+  background-color: var(--light-gray);
+  margin-top: 13rem;
+}
+
+.attendances .attendance{
+  display: flex;
+  justify-content: space-between;
+  padding: 6.2rem 0;  
+}
+
+.attendances .attendance .attendance-area h2, .deliveries h2{
+  text-align: center;  
+  color: var(--dark-green);
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.attendances .attendance  .deliveries .weekday-hour{
+  padding: 1.1rem 15.4rem;    
+}
+
+.attendances .attendance  .deliveries .weekday-hour:nth-child(n){
+  background-color: #E5E5E5;  
+}
+
+.attendances .attendance  .deliveries .weekday-hour:nth-child(2n){
+  background-color: white;  
+}
+
+.attendances .attendance  .deliveries .weekday-hour .weekday{
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--light-green);
+}
+
+.attendances .attendance  .deliveries .weekday-hour .hour{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--light-green);
+}
+
+#footer{
+  display: grid;
+  grid-template-areas: 
+    'info-locality contacts  socials info-map important-links'
+    'info-locality card-types card-types card-types card-types';
+  gap: 5rem; 
+  padding-top: 13.4rem;
+  padding-bottom: 11.2rem;
+  color: var(--text-color);
+}
+
+#footer h2{
+  color: var(--black);
+  padding-bottom: 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+#footer .info-locality {
+  width: 257px;    
+  grid-area: info-locality;
+}
+
+#footer .info-locality p{
+  margin-top: 1.9rem;  
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+#footer .contacts {
+  grid-area: contacts;
+}
+
+#footer .contacts .contact{
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 1.2rem;
+}
+
+#footer .contacts .contact p:nth-child(1){
+  font-weight: 700;  
+}
+
+#footer .contacts .contact p span{
+  font-weight: 400;
+}
+
+#footer .socials {
+  grid-area: socials;    
+}
+#footer .socials .social a:hover{
+  translate: 2px;   
+}
+
+#footer .socials .social a:nth-child(-n + 3){
+  margin-right: 1rem;  
+}
+
+#footer .info-map {
+  grid-area: info-map;
+}
+
+#footer .info-map p{
+  padding-bottom: 1.2rem;      
+}
+
+#footer .important-links {
+  grid-area: important-links;
+}
+
+#footer .important-links p{
+  padding-bottom: 1.2rem;  
+}
+
+#footer .card-types {
+  grid-area: card-types;
+}
+
+#footer .card-types p{  
+  padding-top: 2.1rem;  
+  padding-left: 8.4rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+

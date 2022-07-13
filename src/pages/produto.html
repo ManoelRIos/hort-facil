@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hort Fácil</title>
+
+   <!-- FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+     rel="stylesheet"
+   />
+
+   <!-- STYLES -->
+   <link rel="stylesheet" href="../../public/styles/global.css" />
+   <link rel="stylesheet" href="../../public/styles/about.css" />
+   <link rel="stylesheet" href="../../public/styles/home.css" />
+   <link rel="stylesheet" href="../../public/styles/product.css"/>
+</head>
+<body>
+  <header>
+    <!-- Green line -->
+    <div class="green-line">
+      <span>Frete grátis nas compras acima de R$ 220,00</span>
+    </div>
+
+    <!-- Navbar -->
+    <section class="container nav">
+      <div class="nav-bar">
+        <a href="index.html">
+          <img
+            src="../../public/images/logo-hort-facil.svg"
+            alt="Logo da Hort Fácil"
+            class="logo"
+          />
+        </a>
+        <div class="search">
+          <input type="text" placeholder="Pesquisar por:" />
+        </div>
+
+        <a class="link" href="sobre.html">Sobre nós</a>
+        <a class="link" href="">Ajuda</a>
+        <a class="link" href="">Entrar</a>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container cat">
+        <span>Ofertas</span>
+        <span>Verduras</span>
+        <span>Legumes</span>
+        <span>Frutas</span>
+        <span>Especiarias</span>
+        <span
+          >Entregar em <span>estado de Minas Gerais</span>
+          <!-- será alterado a partir do botão -->
+          <a>(alterar)</a>
+        </span>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <div class="page-info">
+      <span>Início</span>
+      <span>&gt;</span>
+      <span>Hortifruti</span>
+      <span>&gt;</span>
+      <span>Tangerina (500g)</span>
+    </div>
+
+    <div class="product">
+      <div class="image">
+        <img src="../../public/images/tangerina.svg" alt="Tangerina">
+      </div>
+      <div class="card-product">
+        <p class="product-title">Tangerina (500g)</p>             
+        <p class="simple-text">De: R$9,00</p>
+        <p class="price">Por: R$7,00</p>
+        <p class="offer-alert">Em Oferta!</p>
+        <p class="simple-text">Em estoque</p>
+        <p class="simple-text">Para ativar sua assinatura, escolha a frequência semanal,
+           quinzenal ou mensal e tenha 10% de desconto em todos os produtos extras do mercado.
+        </p>
+
+        <button class="btn-default">Adicionar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer" class="container">      
+    <div class="info-locality">
+      <div class="logo">
+        <img src="../../public/images/logo-hort-facil.svg" alt="" />
+      </div>
+      <p>
+        Somos uma plataforma digital de produtos que conecta pequenos
+        produtores rurais a consumidores urbanos.
+      </p>
+      <p>Endereço: Rua Teste, 761 - Minas</p>
+      <p>CNPJ: 00.000.000/0001-30</p>
+    </div>
+    <div class="contacts">
+      <h2>Nossos contatos</h2>
+      <div class="contact">            
+        <p>
+          <img src="../../public/icons/whatsapp.svg" alt="Ícone do whatsapp"> 
+          Whatsapp               
+          <span>(apenas mensagem)</span>
+        </p>
+        
+        <p>(21) 11111-1111</p>
+      </div>
+      <div class="contact">            
+        <p>
+          <img src="../../public/icons/email.svg" alt="Ícone de email"> 
+          E-mail              
+        </p>
+        <p>contato@xxxx.com.br</p>
+      </div>
+    </div>
+
+    <div class="socials">
+      <h2>Nossas redes</h2>
+      <div class="social">          
+        <a href=""><img src="../../public/icons/facebook.svg" alt=""></a>
+        <a href=""><img src="../../public/icons/instagram.svg" alt=""></a>
+        <a href=""><img src="../../public/icons/linkedin.svg" alt=""></a>            
+        <a href=""><img src="../../public/icons/youtube.svg" alt=""></a>
+      </div>      
+    </div>
+
+    <div class="info-map">
+      <h2>Mapa do site</h2>
+      <p>Sobre nós</p>
+      <p>Mercado</p>
+    </div>
+
+    <div class="important-links">
+      <h2>Links importantes</h2>
+      <p>Política de privacidade</p>
+      <p>Termos de uso</p>
+      <p>Política de troca</p>
+    </div>
+
+    <div class="card-types">
+      <h2>Aceitamos</h2>
+      <img src="../../public/images/img-cards.png" alt="">
+      <p>É proibida a venda de produtos alcoólicos para menores de 18 anos</p>          
+    </div>      
+  </footer>
+
+  <div id="modal">
+    <div id="modal-cart">   
+      <div class="modal-header">
+        <button class="close-modal">x</button>
+        <p>Carrinho</p>
+      </div>
+  
+      <div class="modal-body">
+        <div class="cart-item">
+          <div class="image">
+            <img src="../../public/images/rabanete.svg" alt="">
+            <div class="button-group">            
+              <button>-</button>
+              <button>+</button>
+            </div>
+          </div>
+  
+          <div class="cart-text">
+            <p>Queijo Curado 300g (Fazenda Alegria)</p>
+            <button><img src="../../public/icons/remove.svg" alt="Remover"></button>
+            <p>R$ 7,50</p>                    
+          </div>                  
+        </div>
+  
+        <div class="divider"></div>
+  
+        <div class="cart-item">
+          <div class="image">
+            <img src="../../public/images/rabanete.svg" alt="">
+            <div class="button-group">            
+              <button>-</button>
+              <button>+</button>
+            </div>
+          </div>
+  
+          <div class="cart-text">
+            <p>Queijo Curado 300g (Fazenda Alegria)</p>
+            <button><img src="../../public/icons/remove.svg" alt="Remover"></button>
+            <p>R$ 7,50</p>                    
+          </div>                  
+        </div>
+              
+      </div>    
+      
+      <div class="modal-footer">
+        <div class="footer-text">
+          <span class="qtd-item">2 Itens</span>
+          <span class="price">R$ 107,30</span>
+        </div>      
+        
+        <div class="btn-group">
+          <button class="btn-outlined">Continuar Comprando</button>
+          <button class="btn-default">Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/products.js"></script>
+</body>
+</html>

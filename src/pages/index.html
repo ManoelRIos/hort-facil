@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hort Fácil</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../public/styles/global.css" />
+    <link rel="stylesheet" href="../../public/styles/home.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Green line -->
+      <div class="green-line">
+        <span>Frete grátis nas compras acima de R$ 220,00</span>
+      </div>
+
+      <!-- Navbar -->
+      <section class="container nav">
+        <div class="nav-bar">
+          <a href="index.html">
+            <img
+              src="../../public/images/logo-hort-facil.svg"
+              alt="Logo da Hort Fácil"
+              class="logo"
+            />
+          </a>
+          <div class="search">
+            <input type="text" placeholder="Pesquisar por:" />
+          </div>
+
+          <a class="link" href="sobre.html">Sobre nós</a>
+          <a class="link" href="">Ajuda</a>
+          <a class="link" href="">Entrar</a>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="container cat">
+          <span>Ofertas</span>
+          <span>Verduras</span>
+          <span>Legumes</span>
+          <span>Frutas</span>
+          <span>Especiarias</span>
+          <span
+            >Entregar em <span>estado de Minas Gerais</span>
+            <!-- será alterado a partir do botão -->
+            <a>(alterar)</a>
+          </span>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- SLIDE PARALLAX -->
+      <section class="container info">
+        <div class="slide-parallax">
+          <img src="../../public/images/image-slide.svg" alt="" />
+        </div>
+
+        <div class="cards-info">
+          <div class="card-info">
+            <i
+              ><img
+                src="../../public/icons/cart.svg"
+                alt="ícone de carrinho de compras"
+            /></i>
+            <span>Monte seu pedido ou escolha uma cesta pronta</span>
+          </div>
+          <div class="card-info">
+            <i
+              ><img src="../../public/icons/tag.svg" alt="ícone de etiqueta"
+            /></i>
+            <span>Assinantes tem 10% de desconto em todo o site</span>
+          </div>
+          <div class="card-info">
+            <i
+              ><img
+                src="../../public/icons/clock.svg"
+                alt="ícone de um relógio"
+            /></i>
+            <span>Peça até ás 12h e receba amanhã</span>
+          </div>
+        </div>
+      </section>
+      
+      <section class="container products">
+
+        <div class="products-content">
+          <div class="product-text">
+            <h2>Promoções</h2>
+            <a href=""
+              >Ver mais <img src="../../public/icons/arrow.svg" alt=""
+            /></a>
+          </div>
+
+          <div class="product-content">
+  
+            <div class="card-product">
+              <img src="../../public/images/tomate.svg" alt="Tomate" />
+              <div class="card-product-body">
+                <p>Tomate (500g)</p>
+                <div class="price">
+                  <span>R$10,00</span>              
+                  <span>oferta</span>
+                </div>
+                <!-- ROTA DO PRODUTO -->              
+                <button class="btn-default" onclick="location.href='produto.html';">Adicionar</button>
+              </div>            
+            </div>
+            <div class="card-product">
+              <img src="../../public/images/tangerina.svg" alt="Tangerina" />            
+              <div class="card-product-body">
+                <p>Tangerina (500g)</p>
+                <div class="price">
+                  <span>R$7,50</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>                      
+            <div class="card-product">
+              <img src="../../public/images/limao.svg" alt="Limão Tahiti" />            
+              <div class="card-product-body">
+                <p>Limão Tahiti (500g)</p>
+                <div class="price">
+                  <span>R$6,00</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>
+            <div class="card-product">
+              <img src="../../public/images/rabanete.svg" alt="Rabanete" />            
+              <div class="card-product-body">
+                <p>Rabanete (500g)</p>
+                <div class="price">
+                  <span>R$7,00</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>                  
+            <div class="card-product">              
+              <img src="../../public/images/batata-doce.svg" alt="Batata doce roxa" />            
+              <div class="card-product-body">
+                <p>Batata Doce Roxa (500g)</p>
+                <div class="price">
+                  <span>R$6,50</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>  
+                    
+          </div>        
+
+          <div class="products-content">
+          <div class="product-text">
+            <h2>Verduras</h2>
+            <a href=""
+              >Ver mais <img src="../../public/icons/arrow.svg" alt=""
+            /></a>
+          </div>
+          <div class="product-content">  
+            <div class="card-product">
+              <img src="../../public/images/tomate.svg" alt="Tomate" />
+              <div class="card-product-body">
+                <p>Tomate (500g)</p>
+                <div class="price">
+                  <span>R$10,00</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>
+            <div class="card-product">
+              <img src="../../public/images/tangerina.svg" alt="Tangerina" />            
+              <div class="card-product-body">
+                <p>Tangerina (500g)</p>
+                <div class="price">
+                  <span>R$7,50</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>                      
+            <div class="card-product">
+              <img src="../../public/images/limao.svg" alt="Limão Tahiti" />            
+              <div class="card-product-body">
+                <p>Limão Tahiti (500g)</p>
+                <div class="price">
+                  <span>R$6,00</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>
+            <div class="card-product">
+              <img src="../../public/images/rabanete.svg" alt="Rabanete" />            
+              <div class="card-product-body">
+                <p>Rabanete (500g)</p>
+                <div class="price">
+                  <span>R$7,00</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>                  
+            <div class="card-product">              
+              <img src="../../public/images/batata-doce.svg" alt="Batata doce roxa" />            
+              <div class="card-product-body">
+                <p>Batata Doce Roxa (500g)</p>
+                <div class="price">
+                  <span>R$6,50</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>                      
+          </div>
+          </div>
+
+          <div class="products-content">
+          <div class="product-text">
+            <h2>Legumes</h2>
+            <a href=""
+              >Ver mais <img src="../../public/icons/arrow.svg" alt=""
+            /></a>
+          </div>
+          <div class="product-content">
+  
+            <div class="card-product">
+              <img src="../../public/images/tomate.svg" alt="Tomate" />
+              <div class="card-product-body">
+                <p>Tomate (500g)</p>
+                <div class="price">
+                  <span>R$10,00</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>
+            <div class="card-product">
+              <img src="../../public/images/tangerina.svg" alt="Tangerina" />            
+              <div class="card-product-body">
+                <p>Tangerina (500g)</p>
+                <div class="price">
+                  <span>R$7,50</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>                      
+            <div class="card-product">
+              <img src="../../public/images/limao.svg" alt="Limão Tahiti" />            
+              <div class="card-product-body">
+                <p>Limão Tahiti (500g)</p>
+                <div class="price">
+                  <span>R$6,00</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>
+            <div class="card-product">
+              <img src="../../public/images/rabanete.svg" alt="Rabanete" />            
+              <div class="card-product-body">
+                <p>Rabanete (500g)</p>
+                <div class="price">
+                  <span>R$7,00</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>                  
+            <div class="card-product">              
+              <img src="../../public/images/batata-doce.svg" alt="Batata doce roxa" />            
+              <div class="card-product-body">
+                <p>Batata Doce Roxa (500g)</p>
+                <div class="price">
+                  <span>R$6,50</span>              
+                  <span>oferta</span>
+                </div>              
+                <button class="btn-default">Adicionar</button>
+              </div>            
+            </div>                      
+          </div>
+
+          </div>
+       
+          <div class="more-itens">
+          <button class="btn-outlined">Ver todos os itens</button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="container testimonial">
+        <div class="text-testimonial">
+          <h2>Clientes</h2>
+          <p>Veja o que os nossos clientes estão falando sobre a gente</p>
+        </div>
+        <div class="testimonials">
+          <div class="card-testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Adipiscing diam donec adipiscing tristique risus.
+              </p>
+              <p>Juliana F.</p>
+            </blockquote>
+          </div>
+          <div class="card-testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Adipiscing diam donec adipiscing tristique risus.
+              </p>
+              <p>Juliana F.</p>
+            </blockquote>
+          </div>
+          <div class="card-testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Adipiscing diam donec adipiscing tristique risus.
+              </p>
+              <p>Juliana F.</p>
+            </blockquote>
+          </div>
+          <div class="card-testimonial">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Adipiscing diam donec adipiscing tristique risus.
+              </p>
+              <p>Juliana F.</p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="container attendances">
+        <div class="attendance">
+          <div class="attendance-area">
+            <h2>ÁREA DE ATENDIMENTO</h2>
+            <!-- IFRAME DO MAPA -->
+            <div style="width: 100%">
+              <iframe
+                width="526"
+                height="346"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=526&amp;height=346&amp;hl=en&amp;q=Belo%20horizonte+(Horti%20f%C3%A1cil)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.gps.ie/farm-gps/">tractor gps</a></iframe
+              >
+            </div>
+          </div>
+
+          <div class="deliveries">
+            <h2>ENTREGAS</h2>
+            <div class="schedules">
+              <div class="weekday-hour">
+                <p class="weekday">Segunda-feira</p>
+                <p class="hour">10h às 20h</p>
+              </div>
+              <div class="weekday-hour">
+                <p class="weekday">Terça-feira</p>
+                <p class="hour">09h às 20h</p>
+              </div>
+              <div class="weekday-hour">
+                <p class="weekday">Quarta-feira</p>
+                <p class="hour">09h às 20h</p>
+              </div>
+              <div class="weekday-hour">
+                <p class="weekday">Quinta-feira</p>
+                <p class="hour">09h às 20h</p>
+              </div>
+              <div class="weekday-hour">
+                <p class="weekday">Sexta-feira</p>
+                <p class="hour">09h às 20h</p>
+              </div>
+              <div class="weekday-hour">
+                <p class="weekday">Sábado-feira</p>
+                <p class="hour">08h às 13h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="container">      
+        <div class="info-locality">
+          <div class="logo">
+            <img src="../../public/images/logo-hort-facil.svg" alt="" />
+          </div>
+          <p>
+            Somos uma plataforma digital de produtos que conecta pequenos
+            produtores rurais a consumidores urbanos.
+          </p>
+          <p>Endereço: Rua Teste, 761 - Minas</p>
+          <p>CNPJ: 00.000.000/0001-30</p>
+        </div>
+        <div class="contacts">
+          <h2>Nossos contatos</h2>
+          <div class="contact">            
+            <p>
+              <img src="../../public/icons/whatsapp.svg" alt="Ícone do whatsapp"> 
+              Whatsapp               
+              <span>(apenas mensagem)</span>
+            </p>
+            
+            <p>(21) 11111-1111</p>
+          </div>
+          <div class="contact">            
+            <p>
+              <img src="../../public/icons/email.svg" alt="Ícone de email"> 
+              E-mail              
+            </p>
+            <p>contato@xxxx.com.br</p>
+          </div>
+        </div>
+
+        <div class="socials">
+          <h2>Nossas redes</h2>
+          <div class="social">          
+            <a href=""><img src="../../public/icons/facebook.svg" alt=""></a>
+            <a href=""><img src="../../public/icons/instagram.svg" alt=""></a>
+            <a href=""><img src="../../public/icons/linkedin.svg" alt=""></a>            
+            <a href=""><img src="../../public/icons/youtube.svg" alt=""></a>
+          </div>      
+        </div>
+
+        <div class="info-map">
+          <h2>Mapa do site</h2>
+          <p>Sobre nós</p>
+          <p>Mercado</p>
+        </div>
+
+        <div class="important-links">
+          <h2>Links importantes</h2>
+          <p>Política de privacidade</p>
+          <p>Termos de uso</p>
+          <p>Política de troca</p>
+        </div>
+
+        <div class="card-types">
+          <h2>Aceitamos</h2>
+          <img src="../../public/images/img-cards.png" alt="">
+          <p>É proibida a venda de produtos alcoólicos para menores de 18 anos</p>          
+        </div>      
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

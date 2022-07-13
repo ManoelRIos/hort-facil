@@ -1,0 +1,41 @@
+
+main{
+  margin-bottom: 30rem;
+}
+
+main .page-info {
+  padding-top: 6rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+main .page-info span:nth-child(1) {
+  color: var(--green);
+}
+
+main .title {
+  padding-top: 2.7rem;
+  color: var(--black);
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+main .content {
+  display: flex;  
+  padding-top: 2.7rem;
+}
+
+main .content p {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-align: start;  
+  margin-right: 7.2rem;
+}
+
+main .content .image {
+  position: relative;
+}
+
+main .content img {
+  max-width: 50.6rem;
+}

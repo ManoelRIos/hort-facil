@@ -1,0 +1,72 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+:root{
+  /* COLORS */
+  --green: #417838;
+  --dark-green: #508104;
+  --light-green: #3A9848;
+  --yellow: #f3b900;
+
+  --black: #404042;
+  --light-black: #666666;
+  --text-color: #757575;
+  --gray: #E5E5E5;
+  --light-gray: #F7F7F7;
+
+  /* FONTS */
+  --open-sans: 'Open Sans', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+
+  font-size: 62.5%;  
+}
+
+body{
+  /* background-color: var(--light-gray); */
+}
+
+body, button, input, textarea{
+  /* intervalo de tamanho  */
+  font-size: clamp(14px, 1.6rem, 2vw);  
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  padding: 0 20rem;
+}
+
+.btn-default{
+  padding: 1.3rem 6.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--dark-green);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-default:hover{
+  opacity: 0.8;
+  
+}
+
+.btn-outlined{
+  background-color: white;
+  border: 1px solid var(--green);
+  padding: 1.3rem 6.4rem ;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-outlined:hover{
+  color: white;
+  background-color: var(--green);
+}
+
