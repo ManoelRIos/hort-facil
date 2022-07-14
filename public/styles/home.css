@@ -1,4 +1,3 @@
-
 /* HEADER */
 header .green-line{
   text-align: center;
@@ -68,10 +67,16 @@ header .categories .cat{
   justify-content: space-between;
 }
 
-header .categories .cat span{
+header .categories .cat a, span{
   color: --black;
   font-size: 1.4rem;
   padding: 1.4rem 0;
+  transition: 0.2s;
+}
+
+header .categories .cat a:hover{
+  transform: translateY(-2px);
+  color: var(--green);
 }
 
 header .categories .cat span a{
@@ -141,30 +146,41 @@ header .categories .cat span a:hover{
   display: flex;  
   justify-content: space-between;
   position: relative;  
-  padding-top: 2.6rem;
-  
+  padding-top: 2.6rem;  
 }
 
 .products .product-content .card-product{    
-  width: 22.5rem;  
+  width: 26.6rem;    
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14);
-  border-radius: 10px;    
+  border-radius: 10px;
+  cursor: pointer;  
+  transition: .2s;    
+}
+
+.products .product-content .card-product:hover{    
+  transform: translateY(-5px);  
+  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.14);
+}
+
+.products .product-content .card-product img{  
+  width: 100%;
 }
 
 .products .card-product .card-product-body{
   margin: 1.6rem;
 }
 
-.products .card-product .card-product-body p{
-  margin-bottom: 5.2rem;
-  font-size: 1.8rem;
+.products .card-product .card-product-body p{  
+  font-size: 1.8rem;  
+  width: 21rem;
+  height: 7.4rem;  
   color: var(--black);
 }
 
 .products .card-product .card-product-body .price{
   display: flex;
-  align-items: center;
-  padding-bottom: 1.2rem;    
+  align-items: center;    
+
 }
 
 .products .card-product .card-product-body span:nth-child(1){
@@ -178,6 +194,12 @@ header .categories .cat span a:hover{
   font-size: 1.2rem;
   color: var(--text-color);
   font-weight: 400;  
+}
+
+.products .card-product .card-product-body button{
+  position: relative;
+  width: 100%;  
+  padding-top: 1.2rem;
 }
 
 .products .more-itens{
