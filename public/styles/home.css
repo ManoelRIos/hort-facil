@@ -93,8 +93,33 @@ header .categories .cat span a:hover{
   padding-top: 1.5rem;
 }
 
-.info .slide-parallax img{
+/* SLIDER */
+.swiper{  
   width: 100%;
+}
+
+.swiper-slide img{
+  width: 100%;
+}
+
+.swiper-pagination{
+  display: flex;
+  justify-content: end;
+  padding-right: 2.8rem;
+  padding-bottom: .9rem;
+}
+
+.swiper-pagination-bullet{   
+  width: 1.1rem;
+  height: 1.1rem;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #fff;
 }
 
 .info .cards-info{
