@@ -68,7 +68,7 @@ header .categories .cat{
 }
 
 header .categories .cat a, span{
-  color: --black;
+  color: var(--black);
   font-size: 1.4rem;
   padding: 1.4rem 0;
   transition: 0.2s;
@@ -121,6 +121,8 @@ header .categories .cat span a:hover{
 .swiper-pagination-bullet-active{
   background-color: #fff;
 }
+
+
 
 .info .cards-info{
   display: flex;
