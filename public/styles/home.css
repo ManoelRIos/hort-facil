@@ -172,7 +172,7 @@ header .categories .cat span a:hover{
 .products .product-content{
   display: flex;  
   justify-content: space-between;
-  position: relative;  
+  /* flex-wrap: wrap; */  
   padding-top: 2.6rem;  
 }
 
