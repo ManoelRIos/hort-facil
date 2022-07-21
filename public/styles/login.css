@@ -21,9 +21,6 @@
   padding-bottom:3rem;
 }
 
-.login-form{    
-}
-
 .login-form form{  
   border: 1px solid #D3CED2;
   border-radius: 5px;
@@ -57,6 +54,23 @@
   height: 46.5rem;
   width: 1px;
   margin: 0 6.4rem;
-  background-color: #DEE2E6;
-  /* border: 1px solid #DEE2E6; */
+  background-color: #DEE2E6;  
 }
+
+
+.create-account{
+  width: 100%;
+}
+
+.create-account p{
+  padding-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.create-account button{
+  color: var(--green);
+  
+}
+
