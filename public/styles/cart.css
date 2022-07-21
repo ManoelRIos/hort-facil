@@ -5,13 +5,21 @@ main h2{
   font-weight: 400;
 }
 
+main p{
+  font-size: 1.3rem;
+  color: var(--black);
+  font-weight: 400;
+}
+
 .cart{
   display: flex;
   justify-content: space-between;
 }
 
 .cart-card{
-  margin-top: 2rem;
+  width: 100%;
+  min-width: 60rem;
+  margin: 2rem 3.2rem 0 0;
   padding: 3.2rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.147782);
   border-radius: 10px;
@@ -19,21 +27,46 @@ main h2{
 }
 
 .cart-card .item{
-  display: flex;  
-
+  display: flex;
+  justify-content: space-between;  
 }
 
-.cart-card .item img:nth-child(1){  
-  width: 10.1rem;
+.cart-card .item-info{
+  display: flex;  
 }
 
-.cart-card .item .item-actions{
-  display: flex;  
+.cart-card .item-info p{
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 1.3rem;
+}
+
+.cart-card .item-info .img{  
+  height: 6.7rem;
+  padding-right: 2.7rem;
+}
+
+.cart-card .item-info .item-actions{
+  display: flex;    
+  align-items: center;  
+}
+
+.cart-card .item-info .item-body .item-actions a{ 
+  width: 1.3rem;  
+  margin-left: 3.3rem;      
+  cursor: pointer;
+  transition: .3s;
+}
+
+.cart-card .item-info .item-body .item-actions a:hover{
+  transform: translateY(-4px);
 }
 
 .cart-card .item span{
-  position: relative;
-  right: 0;
+  font-size: 2.1rem;
+  color: var(--text-color);
+  font-weight: 400;
 }
 
 .button-group{
@@ -43,7 +76,7 @@ main h2{
   height: 3.2rem;
   border: 1px solid var(--black);  
   border-radius: 6px;
-  background-color: white;  
+  background-color: white;   
 }
 
 .button-group button{  
@@ -69,9 +102,62 @@ main h2{
   border-end-end-radius: 6px;  
 } 
 
+.divider-item{
+  margin: 3.2rem 0;
+  height: 1px;
+  width: 100%;  
+  background-color: #DEE2E6;  
+}
+
 .order-card{
+  min-width: 39.8rem;
   margin-top: 2rem;
   padding: 3.2rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.147782);
   border-radius: 10px;
 }
+
+.order-card .title{
+  font-size: 1.4rem;
+  color: var(--black);  
+}
+
+.order-card .promotion{
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.order-card .text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-card .total-value{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #F5F6EE;  
+}
+
+.order-card .btn-group{
+  display: flex;  
+  justify-content: center;
+  margin-top: 1.4rem;
+}
+
+.order-card .btn-group button{  
+  padding: 0;
+}
+
+.order-card .btn-group button:nth-child(1){ 
+  margin-right: .8rem;
+  padding: 1.3rem 1.5rem;
+}
+
+.order-card .btn-group button:nth-child(2){ 
+  padding: 1.3rem 2rem;
+}
+
