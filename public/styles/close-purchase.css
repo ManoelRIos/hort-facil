@@ -5,6 +5,29 @@ main h2{
   font-weight: 400;
 }
 
+main label{  
+  display: block;
+  font-size: 1.4rem;
+  color: var(--black);
+  font-weight: 400;
+  padding-top: .8rem;
+  padding-bottom: .5rem;
+}
+
+main input{
+  padding: 1rem 0 .9rem 1.2rem;
+  border: 1px solid #757575;
+  border-radius: 6px;  
+  width: 100%;
+}
+
+/* Adiciona label acima do input */
+.jc-input{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  column-gap: 3.2rem;      
+}
+
 .warning{
   width: 100%;
   padding: 1.5rem;
@@ -19,9 +42,21 @@ main h2{
   color: #534101;
 }
 
-form.datas{
+form.datas{  
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+form.datas p.title{
+  font-size: 1.4rem;
+  color: var(--green);
+  font-weight: 400;
+  padding-bottom: 2.5rem;
+}
+
+form.datas input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 section.user-data, section.payment, section.close-purchase{
@@ -31,14 +66,125 @@ section.user-data, section.payment, section.close-purchase{
   border-radius: 10px;
 }
 
-.user-data{
-  width: 39.4rem;
+.user-data .toggle-group{
+  display: flex;
+  width: 10.8rem;  
+  padding: 1.5rem 0;
 }
 
-.payment{
-  width: 39.4rem;
+.user-data p{  
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--black);
+  padding-top: 1rem;
 }
 
-.close-purchase{
-  width: 39.4rem;
+.user-data .cep{
+  display: flex;
+  justify-content: space-between;
 }
+
+.user-data .diff-address{
+  display: flex; 
+  justify-content: flex-start;  
+  align-items: center;
+  padding-top: 1.2rem;
+}
+
+.user-data .diff-address input{
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-top: .5rem;
+  margin-right: .7rem;  
+}
+
+.payment p{
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.payment .credit-card{
+  display: flex;
+  align-items: center;
+}
+
+.payment .credit-card .circle{
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 1.8rem;
+  clip-path: circle();
+  background-color: var(--green); 
+}
+
+.payment .card-expiring input:nth-child(2){
+  width: 50%;
+}
+
+.payment .code-card{
+  display: flex;
+  align-items: center;  
+}
+
+.payment .code-card input{
+  width: 25%;
+  margin-right: 2.3rem;
+}
+
+.payment .code-card p.info-code{  
+  font-size: 1.1rem;
+  color: #767676;
+}
+
+.payment .divider{
+  width: 100%;
+  height: 1px;
+  background-color: #D3CED2;
+  margin: 3.3rem 0 1.55rem 0;
+}
+
+.payment p.data-info{
+  line-height: 21px;
+}
+
+.payment .data-info a{
+  color: var(--green);
+}
+
+.close-purchase p.order-title{
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.close-purchase .text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-purchase .total-value{
+  position: relative;
+  left: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  width: 35rem;
+  padding: 0 1rem;
+  margin-bottom: 1.4rem;
+  background-color: #F5F6EE;  
+}
+
+.close-purchase .btn-default{
+  width: 100%;
+  background-color: var(--green);
+}
+
+.close-purchase p.data-info{
+  margin-top: 3.3rem;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+
