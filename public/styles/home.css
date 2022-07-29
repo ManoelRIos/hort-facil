@@ -93,6 +93,7 @@ header .categories .cat span a:hover{
 }
 
 .info{
+  width: 100%;
   padding-top: 1.5rem;
 }
 
@@ -125,11 +126,11 @@ header .categories .cat span a:hover{
   background-color: #fff;
 }
 
-
-
 .info .cards-info{
   display: flex;
-  justify-content: space-between;  
+  justify-content: center; 
+  gap: 5rem;
+  /* flex-wrap: wrap; */
   
   margin-top: 1.6rem;
   padding: 2.1rem 6rem;
@@ -138,9 +139,10 @@ header .categories .cat span a:hover{
   border-radius: 10px;
 }
 
-.info .card-info{
+.info .card-info{    
   display: flex;    
-  align-items: center;    
+  align-items: center; 
+  width: 100%;   
 }
 
 .info .cards-info .card-info span{
@@ -148,11 +150,11 @@ header .categories .cat span a:hover{
 }
 
 .info .card-info:nth-child(-n + 2){
-  margin-right: 26rem;  
+  /* margin-right: 26rem; */
 }
 
 .products-content{
-  padding-top: 2.9rem;     
+  padding-top: 2.9rem;  
 }
 
 .products .product-text {
@@ -172,17 +174,17 @@ header .categories .cat span a:hover{
   font-size: 1.8rem;
 }
 
-.products .product-content{
+.products .product-content{  
   display: flex;  
-  justify-content: space-between;
-  /* flex-wrap: wrap; */  
-  padding-top: 2.6rem;  
+  justify-content: space-between;  
+  flex-wrap: wrap;    
 }
 
 .products .product-content .card-product{    
   width: 26.6rem;    
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14);
   border-radius: 10px;
+  margin-top: 3rem;
   cursor: pointer;  
   transition: .2s;    
 }
@@ -210,7 +212,6 @@ header .categories .cat span a:hover{
 .products .card-product .card-product-body .price{
   display: flex;
   align-items: center;    
-
 }
 
 .products .card-product .card-product-body span:nth-child(1){
@@ -408,7 +409,32 @@ header .categories .cat span a:hover{
 }
 
 
+@media (max-width: 992px) {
+  .slider{
+    padding: 1.5rem 0;
+    overflow: hidden;
+  }
 
+  .info .cards-info{
+    grid-template-columns: 1fr 1fr;
+    gap: 26rem;
+    /* flex-wrap: wrap; */
+  }  
+
+  .products .product-content .card-product:nth-child(5){
+    display: none;    
+  }
+
+  .testimonial {
+    overflow: hidden;
+  }
+
+  .attendances .attendance{
+    display: grid;
+    grid-template-columns: 1fr;   
+  }
+
+}
 
 
 

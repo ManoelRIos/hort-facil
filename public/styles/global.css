@@ -36,8 +36,9 @@ body, button, input, textarea{
   font-family: 'Open Sans', sans-serif;
 }
 
-.container{
+.container{  
   padding: 0 20rem;
+  width: 100%;
 }
 
 .btn-default{
@@ -68,5 +69,11 @@ body, button, input, textarea{
 .btn-outlined:hover{
   color: white;
   background-color: var(--green);
+}
+
+@media(max-width: 1200px){
+  .container{
+    padding: 0 1.6rem;
+  }
 }
 
