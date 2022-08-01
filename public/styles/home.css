@@ -92,11 +92,6 @@ header .categories .cat span a:hover{
   color: var(--dark-green); /* verificar hover */
 }
 
-.info{
-  width: 100%;
-  padding-top: 1.5rem;
-}
-
 /* SLIDER */
 .swiper{  
   width: 100%;
@@ -126,11 +121,16 @@ header .categories .cat span a:hover{
   background-color: #fff;
 }
 
+.info{
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
 .info .cards-info{
   display: flex;
-  justify-content: center; 
-  gap: 5rem;
-  /* flex-wrap: wrap; */
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  gap: 3rem;
   
   margin-top: 1.6rem;
   padding: 2.1rem 6rem;
@@ -141,8 +141,8 @@ header .categories .cat span a:hover{
 
 .info .card-info{    
   display: flex;    
-  align-items: center; 
-  width: 100%;   
+  align-items: center;
+  width: 25rem; 
 }
 
 .info .cards-info .card-info span{
@@ -241,6 +241,7 @@ header .categories .cat span a:hover{
 
 .testimonial {
   padding-top: 10.9rem;
+  overflow: hidden;
  }
 
 .testimonial .text-testimonial {
@@ -263,6 +264,7 @@ header .categories .cat span a:hover{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   min-width: 100%;  
   padding-top: 4.8rem;
+ 
 }
 
 .testimonial .testimonials .card-testimonial{
@@ -288,8 +290,12 @@ header .categories .cat span a:hover{
 
 .attendances .attendance{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 6.2rem 0;  
+}
+
+.attendances .attendance .attendance-area, .deliveries{
+  width: 100%;
 }
 
 .attendances .attendance .attendance-area h2, .deliveries h2{
@@ -301,6 +307,8 @@ header .categories .cat span a:hover{
 
 .attendances .attendance  .deliveries .weekday-hour{
   padding: 1.1rem 15.4rem;    
+  width: 100%;
+  text-align: center;
 }
 
 .attendances .attendance  .deliveries .weekday-hour:nth-child(n){
@@ -317,7 +325,7 @@ header .categories .cat span a:hover{
   color: var(--light-green);
 }
 
-.attendances .attendance  .deliveries .weekday-hour .hour{
+.attendances .attendance .deliveries .weekday-hour .hour{
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--light-green);
@@ -408,30 +416,58 @@ header .categories .cat span a:hover{
   font-weight: 400;
 }
 
+@media(max-width: 1200px){
+
+}
 
 @media (max-width: 992px) {
+
   .slider{
     padding: 1.5rem 0;
-    overflow: hidden;
+  }
+
+  .swiper-slide img{
   }
 
   .info .cards-info{
-    grid-template-columns: 1fr 1fr;
-    gap: 26rem;
+    padding: 1rem;
     /* flex-wrap: wrap; */
   }  
 
-  .products .product-content .card-product:nth-child(5){
-    display: none;    
+  .info .cards-info .card-info{
+    width: 18rem;
   }
 
-  .testimonial {
-    overflow: hidden;
+  .products .product-content{
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .products .product-content .card-product{
+    width: 24rem;
+  }
+
+  /* Retira o quinto produto da lista */
+  .products .product-content .card-product:nth-child(5){
+    display: none;
   }
 
   .attendances .attendance{
     display: grid;
-    grid-template-columns: 1fr;   
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .attendances .attendance .deliveries h2{
+    padding-top: 8.9rem;
+  }
+
+  .attendances .attendance .attendance-area iframe{
+    width: 100%;
+
+  }
+
+  .attendances .attendance  .deliveries{
   }
 
 }
