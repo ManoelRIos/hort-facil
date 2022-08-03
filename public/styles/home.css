@@ -422,6 +422,31 @@ header .categories .cat span a:hover{
 
 @media (max-width: 992px) {
 
+  header{    
+    height: 10.7rem;
+  }
+
+  .nav .nav-bar{
+    justify-content: space-around;
+  }
+
+  .nav .nav-bar .logo{
+    width: 9rem;
+  }
+
+  .nav .search, .link{    
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    display: none;
+  }
+
+  .categories {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+  }
+
   .slider{
     padding: 1.5rem 0;
   }
@@ -439,12 +464,16 @@ header .categories .cat span a:hover{
   }
 
   .products .product-content{
-    justify-content: center;
+    justify-content: space-around;
     gap: 1rem;
   }
 
+  .products .product-text{
+    justify-content: center;
+  }
+
   .products .product-content .card-product{
-    width: 24rem;
+    width: 22rem;
   }
 
   /* Retira o quinto produto da lista */
@@ -468,6 +497,25 @@ header .categories .cat span a:hover{
   }
 
   .attendances .attendance  .deliveries{
+  }
+
+  #footer{      
+    justify-content: space-around;
+    grid-template-areas: 
+    "info-locality inf-locality" 
+    "contacts socials"
+    "info-map important-links"
+    "card-types card-types";
+    column-gap: 0;
+    padding: 4.4rem 2.2rem;
+  }
+
+  #footer .card-types {
+    text-align: center;     
+  }
+
+  #footer .card-types p{ 
+    display: none;
   }
 
 }
