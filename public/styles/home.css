@@ -101,6 +101,7 @@ header .categories .cat span a:hover{
 /* SLIDER */
 .swiper{  
   width: 100%;
+  padding-top: 1.5rem;
 }
 
 .swiper-slide img{
@@ -431,7 +432,11 @@ header .categories .cat span a:hover{
     height: 15.6rem;
   }
 
-  .nav .nav-bar{
+  header .nav{
+    background-color: white;
+  }
+
+  header .nav .nav-bar{
     justify-content: space-between;
   }
 
@@ -459,10 +464,13 @@ header .categories .cat span a:hover{
   }  
 
   .slider{
+    /* height: 100%; */
     padding: 0;
   }
 
-  .swiper-slide img{
+  .swiper-slide{      
+    /* background-image: url("/public/images/bergamota-img.svg");    
+    background-repeat: no-repeat; */
   }
 
   .info .cards-info{
