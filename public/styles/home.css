@@ -24,6 +24,12 @@ header .nav-bar{
   align-items: center;    
 }
 
+header .nav .nav-bar .icon-nav, .icon-cart{
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+}
+
 header .logo{
   width: 11.5rem;
 }
@@ -46,7 +52,7 @@ header .search input::placeholder{
   color: var(--light-black);
 }
 
-header .nav-bar .link{
+header .nav-bar .link{  
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--dark-green);  
@@ -409,7 +415,7 @@ header .categories .cat span a:hover{
   grid-area: card-types;
 }
 
-#footer .card-types p{  
+#footer .card-types p{   
   padding-top: 2.1rem;  
   padding-left: 8.4rem;
   font-size: 1.3rem;
@@ -417,17 +423,21 @@ header .categories .cat span a:hover{
 }
 
 @media(max-width: 1200px){
-
 }
 
 @media (max-width: 992px) {
 
   header{    
-    height: 10.7rem;
+    height: 15.6rem;
   }
 
   .nav .nav-bar{
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  header .nav .nav-bar .icon-nav, .icon-cart{
+    opacity: 1;
+    visibility: visible;  
   }
 
   .nav .nav-bar .logo{
@@ -441,26 +451,29 @@ header .categories .cat span a:hover{
     display: none;
   }
 
-  .categories {
+  .categories .cat a:nth-child(-n + 5){    
+    display: none;
     opacity: 0;
     visibility: hidden;
     top: -20rem;
-  }
+  }  
 
   .slider{
-    padding: 1.5rem 0;
+    padding: 0;
   }
 
   .swiper-slide img{
   }
 
   .info .cards-info{
-    padding: 1rem;
+    padding: 1rem;        
     /* flex-wrap: wrap; */
   }  
 
   .info .cards-info .card-info{
     width: 18rem;
+    /* height: 3.9rem;
+    margin-top: 3.8rem; */  
   }
 
   .products .product-content{
