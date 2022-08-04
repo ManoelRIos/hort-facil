@@ -50,6 +50,7 @@ main .product .card-product{
   width: 100%;
 }
 
+/* MODAL */
 #modal{
   opacity: 0;
   visibility: hidden;  
@@ -215,6 +216,28 @@ main .product .card-product{
   padding: 1.5rem 1.2rem;
   width: 15rem;
 }
+
+@media (max-width: 992px) {
+  main .product {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.3rem;
+  }  
+
+  .product .image{   
+    overflow: hidden; 
+  }
+
+  .product .card-product{
+    width: 100%;
+  }
+
+  #footer{
+    padding-top: 0;
+  }
+
+}
+
 
 
 

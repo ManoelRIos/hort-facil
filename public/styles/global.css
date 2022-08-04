@@ -27,6 +27,7 @@
 }
 
 body{
+  
   /* background-color: var(--light-gray); */
 }
 
@@ -38,7 +39,6 @@ body, button, input, textarea{
 
 .container{  
   padding: 0 20rem;
-  width: 100%;
 }
 
 .btn-default{
@@ -72,7 +72,7 @@ body, button, input, textarea{
 }
 
 @media(max-width: 1200px){
-  .container{
+  .container{    
     padding: 0 1.6rem;
   }
 }

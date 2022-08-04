@@ -24,6 +24,12 @@ header .nav-bar{
   align-items: center;    
 }
 
+header .nav .nav-bar .icon-nav, .icon-cart{
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+}
+
 header .logo{
   width: 11.5rem;
 }
@@ -46,7 +52,7 @@ header .search input::placeholder{
   color: var(--light-black);
 }
 
-header .nav-bar .link{
+header .nav-bar .link{  
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--dark-green);  
@@ -82,24 +88,24 @@ header .categories .cat a:hover{
   color: var(--green);
 }
 
-header .categories .cat span a{
+header .categories .cat span button{
   padding-left: .7rem;
   cursor: pointer;
+  background-color: transparent;
   color: var(--green);
 }
 
-header .categories .cat span a:hover{
+header .categories .cat span button:hover{
   color: var(--dark-green); /* verificar hover */
 }
 
-.info{
-  width: 100%;
+/* SLIDER */
+.slider{
   padding-top: 1.5rem;
 }
 
-/* SLIDER */
 .swiper{  
-  width: 100%;
+  width: 100%;  
 }
 
 .swiper-slide img{
@@ -126,11 +132,16 @@ header .categories .cat span a:hover{
   background-color: #fff;
 }
 
+.info{
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
 .info .cards-info{
   display: flex;
-  justify-content: center; 
-  gap: 5rem;
-  /* flex-wrap: wrap; */
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  gap: 3rem;
   
   margin-top: 1.6rem;
   padding: 2.1rem 6rem;
@@ -141,8 +152,8 @@ header .categories .cat span a:hover{
 
 .info .card-info{    
   display: flex;    
-  align-items: center; 
-  width: 100%;   
+  align-items: center;
+  width: 25rem; 
 }
 
 .info .cards-info .card-info span{
@@ -241,6 +252,7 @@ header .categories .cat span a:hover{
 
 .testimonial {
   padding-top: 10.9rem;
+  overflow: hidden;
  }
 
 .testimonial .text-testimonial {
@@ -263,6 +275,7 @@ header .categories .cat span a:hover{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   min-width: 100%;  
   padding-top: 4.8rem;
+ 
 }
 
 .testimonial .testimonials .card-testimonial{
@@ -288,8 +301,12 @@ header .categories .cat span a:hover{
 
 .attendances .attendance{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 6.2rem 0;  
+}
+
+.attendances .attendance .attendance-area, .deliveries{
+  width: 100%;
 }
 
 .attendances .attendance .attendance-area h2, .deliveries h2{
@@ -301,6 +318,8 @@ header .categories .cat span a:hover{
 
 .attendances .attendance  .deliveries .weekday-hour{
   padding: 1.1rem 15.4rem;    
+  width: 100%;
+  text-align: center;
 }
 
 .attendances .attendance  .deliveries .weekday-hour:nth-child(n){
@@ -317,7 +336,7 @@ header .categories .cat span a:hover{
   color: var(--light-green);
 }
 
-.attendances .attendance  .deliveries .weekday-hour .hour{
+.attendances .attendance .deliveries .weekday-hour .hour{
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--light-green);
@@ -401,37 +420,136 @@ header .categories .cat span a:hover{
   grid-area: card-types;
 }
 
-#footer .card-types p{  
+#footer .card-types p{   
   padding-top: 2.1rem;  
   padding-left: 8.4rem;
   font-size: 1.3rem;
   font-weight: 400;
 }
 
+@media(max-width: 1200px){
+}
 
 @media (max-width: 992px) {
+
+  header{    
+    height: 15.6rem;
+  }
+
+  header .nav{
+    background-color: white;
+  }
+
+  header .nav .nav-bar{
+    justify-content: space-between;
+  }
+
+  header .nav .nav-bar .icon-nav, .icon-cart{
+    opacity: 1;
+    visibility: visible;  
+  }
+
+  .nav .nav-bar .logo{
+    width: 9rem;
+  }
+
+  .nav .search, .link{    
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    display: none;
+  }
+
+  header .categories{
+    background-color: #F5F6EE;
+    box-shadow: 0px 0px 0px 0px;    
+  }
+
+  header .categories .cat{
+    justify-content: center;
+  }
+  
+  .categories .cat a:nth-child(-n + 5){    
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+  }  
+
   .slider{
-    padding: 1.5rem 0;
-    overflow: hidden;
+    /* height: 100%; */
+    padding: 0;
+  }
+
+  .swiper-slide{      
+    /* background-image: url("/public/images/bergamota-img.svg");    
+    background-repeat: no-repeat; */
   }
 
   .info .cards-info{
-    grid-template-columns: 1fr 1fr;
-    gap: 26rem;
+    padding: 1rem;        
     /* flex-wrap: wrap; */
   }  
 
-  .products .product-content .card-product:nth-child(5){
-    display: none;    
+  .info .cards-info .card-info{
+    width: 18rem;
+    /* height: 3.9rem;
+    margin-top: 3.8rem; */  
   }
 
-  .testimonial {
-    overflow: hidden;
+  .products .product-content{
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .products .product-text{
+    justify-content: center;
+  }
+
+  .products .product-content .card-product{
+    width: 22rem;
+  }
+
+  /* Retira o quinto produto da lista */
+  .products .product-content .card-product:nth-child(5){
+    display: none;
   }
 
   .attendances .attendance{
     display: grid;
-    grid-template-columns: 1fr;   
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .attendances .attendance .deliveries h2{
+    padding-top: 8.9rem;
+  }
+
+  .attendances .attendance .attendance-area iframe{
+    width: 100%;
+
+  }
+
+  .attendances .attendance  .deliveries{
+  }
+
+  #footer{      
+    justify-content: space-around;
+    grid-template-areas: 
+    "info-locality inf-locality" 
+    "contacts socials"
+    "info-map important-links"
+    "card-types card-types";
+    column-gap: 0;
+    padding: 4.4rem 2.2rem;
+  }
+
+  #footer .card-types {
+    text-align: center;     
+  }
+
+  #footer .card-types p{ 
+    display: none;
   }
 
 }
