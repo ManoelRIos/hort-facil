@@ -108,6 +108,10 @@ header .categories .cat span button:hover{
   width: 100%;  
 }
 
+.swiper-slide:nth-child(n + 4){   
+  display: none;      
+}
+
 .swiper-slide img{
   width: 100%;
 }
@@ -481,9 +485,8 @@ header .categories .cat span button:hover{
     padding: 0;
   }
 
-  .swiper-slide{      
-    /* background-image: url("/public/images/bergamota-img.svg");    
-    background-repeat: no-repeat; */
+  .swiper-slide:nth-child(-n + 3){   
+    display: none;      
   }
 
   .info .cards-info{
@@ -527,10 +530,6 @@ header .categories .cat span button:hover{
 
   .attendances .attendance .attendance-area iframe{
     width: 100%;
-
-  }
-
-  .attendances .attendance  .deliveries{
   }
 
   #footer{      
@@ -553,6 +552,7 @@ header .categories .cat span button:hover{
   }
 
 }
+
 
 
 
