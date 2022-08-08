@@ -151,6 +151,10 @@ section.user-data, section.payment, section.close-purchase{
   color: var(--green);
 }
 
+.close-purchase{
+  width: 10px;
+}
+
 .close-purchase p.order-title{
   color: var(--text-color);
   font-size: 1.4rem;
@@ -187,4 +191,15 @@ section.user-data, section.payment, section.close-purchase{
   font-weight: 400;
 }
 
+@media (max-width: 1200px) {
+  form.datas{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
+  .user-data, .payment, .close-purchase{
+    width: 100% !important;
+  }
+  
+}
