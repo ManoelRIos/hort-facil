@@ -5,9 +5,13 @@ main .product {
   padding-top: 1.2rem;
 }
 
+main .product .image {
+  width: 61.4rem;
+}
+
 main .product .image img{
   /* CLAMP */
-  width: 61.4rem ;  
+  width: 100%;  
 }
 
 main .product .card-product{

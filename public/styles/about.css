@@ -34,8 +34,22 @@ main .content p {
 
 main .content .image {
   position: relative;
+  width: 50.6rem;
 }
 
 main .content img {
-  max-width: 50.6rem;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  main .content{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  main .content p{
+    text-align: justify;
+    margin-right: 0;
+  }
 }
