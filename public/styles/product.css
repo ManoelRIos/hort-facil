@@ -94,6 +94,7 @@ main .product .card-product{
   font-size: 2.5rem;
   color: black;  
   cursor: pointer;
+  background-color: transparent;
 }
 
 #modal.show #modal-cart .modal-header p{
@@ -240,6 +241,18 @@ main .product .card-product{
     padding-top: 0;
   }
 
+}
+
+@media (max-width: 768px) {
+  #modal.show #modal-cart{  
+    width: 100vw;
+  }
+}
+
+@media (max-width: 482px) {
+  #modal.show #modal-cart .modal-body .cart-item .cart-text p{
+    max-width: 18rem;
+  }
 }
 
 
