@@ -22,6 +22,7 @@ main .title {
 
 main .content {
   display: flex;  
+  justify-content: space-between;
   padding-top: 2.7rem;
 }
 
@@ -33,8 +34,7 @@ main .content p {
 }
 
 main .content .image {
-  position: relative;
-  width: 50.6rem;
+  width: 1920px;
 }
 
 main .content img {

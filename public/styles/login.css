@@ -27,8 +27,12 @@
   padding: 2.4rem;
 }
 
-.login-form form input, label, button{  
+.login-form form input, label{  
   width: 100%;  
+}
+
+.login-form button{
+  width: 100%;
 }
 
 .login-form input{
@@ -72,5 +76,23 @@
 .create-account button{
   color: var(--green);
   
+}
+
+@media (max-width: 992px) {
+  .login{
+    padding: 3.2rem 1.6rem;
+  }
+
+  .login .login-card{
+    flex-wrap: wrap;
+    padding: 6.4rem 3.2rem;
+  }
+
+  .divider{
+    height: 1px;
+    width: 100%;
+    margin: 6.4rem 0;
+    background-color: #DEE2E6;  
+  }
 }
 
