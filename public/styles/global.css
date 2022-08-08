@@ -31,7 +31,7 @@ body{
   /* background-color: var(--light-gray); */
 }
 
-body, button, input, textarea{
+body, button, input, textarea, span{
   /* intervalo de tamanho  */
   font-size: clamp(14px, 1.6rem, 2vw);  
   font-family: 'Open Sans', sans-serif;
