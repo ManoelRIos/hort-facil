@@ -489,6 +489,10 @@ header .categories .cat span button:hover{
     display: none;      
   }
 
+  .swiper-slide:nth-child(n + 4){   
+    display: block;      
+  }
+
   .info .cards-info{
     padding: 1rem;        
     /* flex-wrap: wrap; */
