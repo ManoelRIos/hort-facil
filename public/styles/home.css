@@ -431,8 +431,174 @@ header .categories .cat span button:hover{
   font-weight: 400;
 }
 
-@media(max-width: 1200px){
+/* MODAL */
+#modal{
+  opacity: 0;
+  visibility: hidden;  
+  transition: 0.2s;
+  display: none;
 }
+
+#modal.show{  
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;  
+  top: 0;
+  z-index: 100; 
+  background: rgba(0, 0, 0, 0.3);
+  transition: .2s;  
+}
+
+#modal.show #modal-cart{  
+  position: absolute; 
+  right: 0;  
+  width: 558px;
+  height: 100vh;
+  background-color: white;
+}
+
+#modal.show #modal-cart .modal-header{
+  display: flex;
+  align-items: center;
+  background-color: #F5F6EE;
+}
+
+#modal.show #modal-cart .modal-header button{
+  padding: .9rem 1.8rem  1.1rem 2.2rem;
+  font-size: 2.5rem;
+  color: black;  
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#modal.show #modal-cart .modal-header p{
+  font-size: 2.1rem;
+  color: var(--black);
+  padding: 1.85rem 0 1.5rem 0;
+}
+
+#modal.show #modal-cart .modal-body .cart-item{
+  display: flex;
+  align-items: center;
+  padding-top: 2.8rem;
+}
+
+#modal.show #modal-cart .modal-body .cart-item .image{
+  padding: 0 1.7rem 0 .8rem;
+}
+
+#modal.show #modal-cart .modal-body .cart-item .image img{  
+  width: 13.5rem;
+}
+
+#modal.show #modal-cart .modal-body .cart-item .image .button-group{
+  display: flex;
+  justify-content: space-between;
+  width: 10.7rem;      
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 2.5%;  
+  border: 1px solid var(--black);  
+  border-radius: 6px;
+  background-color: white;  
+}
+
+#modal.show #modal-cart .modal-body .cart-item .image button{  
+  padding: 1rem 1.5rem; 
+  cursor: pointer;   
+  background-color: white;  
+}
+
+#modal.show #modal-cart .modal-body .cart-item .image button:hover{  
+  background-color: var(--light-green);
+}
+
+#modal.show #modal-cart .modal-body .cart-item .image button:nth-child(1){ 
+  border-right: 1px solid var(--black);
+  border-end-start-radius: 6px;
+  border-start-start-radius: 6px;
+} 
+
+#modal.show #modal-cart .modal-body .cart-item .image button:nth-child(2){ 
+  border-left: 1px solid var(--black);
+  border-start-end-radius: 6px;
+  border-end-end-radius: 6px;  
+} 
+
+#modal.show #modal-cart .modal-body .cart-item .cart-text{
+ display: grid;   
+ grid-template-columns: 1fr; 
+}
+
+#modal.show #modal-cart .modal-body .cart-item .cart-text p{  
+  font-size: 1.7rem;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 2.1rem;
+}
+
+#modal.show #modal-cart .modal-body .cart-item .cart-text p:nth-child(1){  
+  font-size: 1.4rem;   
+}
+
+#modal.show #modal-cart .modal-body .cart-item .cart-text button{
+  padding-right: 3rem;
+  width: 1.3rem;  
+  background-color: white;
+  position: absolute;
+  right: 0;  
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+#modal.show #modal-cart .modal-body .cart-item .cart-text button:hover{
+  transform: translateY(-4px);
+}
+
+#modal.show #modal-cart .modal-body .divider{
+  margin: 1.9rem .8rem;
+  border: 1px solid #F5F6EE;
+}
+
+#modal.show #modal-cart .modal-footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #F5F6EE;
+  padding: 1.8rem 3.2rem 1.8em 1rem;
+}
+
+#modal.show #modal-cart .modal-footer .footer-text{
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.8rem;
+}
+
+#modal.show #modal-cart .modal-footer .footer-text .qtd-item{
+  font-size: 1.4rem;
+  padding-right: .5rem;
+  color: var(--black);
+}
+
+#modal.show #modal-cart .modal-footer .footer-text .price{
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+#modal.show #modal-cart .modal-footer .btn-group{
+  width: 100%;
+}
+
+#modal.show #modal-cart .modal-footer .btn-group .btn-default{
+  padding: 1.5rem 1.2rem;
+  width: 15rem;
+}
+
 
 @media (max-width: 992px) {
 
@@ -478,7 +644,22 @@ header .categories .cat span button:hover{
     opacity: 0;
     visibility: hidden;
     top: -20rem;
-  }  
+  }
+
+ /*  .categories .cat.show{
+    z-index: 100;
+    display: fixed;    
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+
+  } */
+  
+/*   .categories .cat.show a:nth-child(-n + 5){    
+    opacity: 1;
+    visibility: visible;    
+  } */
 
   .slider{
     /* height: 100%; */
@@ -554,7 +735,18 @@ header .categories .cat span button:hover{
   #footer .card-types p{ 
     display: none;
   }
+}
 
+@media (max-width: 768px) {
+  #modal.show #modal-cart{  
+    width: 100vw;
+  }
+}
+
+@media (max-width: 482px) {
+  #modal.show #modal-cart .modal-body .cart-item .cart-text p{
+    max-width: 18rem;
+  }
 }
 
 
