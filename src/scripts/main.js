@@ -1,21 +1,4 @@
 /* HOME */
-
-//swipper
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-  },
-
-  autoplay: {
-    delay: 5000,
-  },
-  // Navigation arrows
-  keyboard: true,
-});
-
 function toggleNav() {
   const nav = document.querySelector(".cat");
   const btnOpenNav = document.querySelector(".nav-bar .icon-nav");  
@@ -28,8 +11,6 @@ function toggleNav() {
   btnCloseNav.addEventListener("click", function () {
     nav.classList.remove("active");
   })
-  
-
 }
 
 function openCart() {
@@ -46,12 +27,9 @@ function openCart() {
     modalCart.classList.remove("show");
   });
 
-  /* AO CLICAR FORA DO  MODAL */
-/*   clickOut.addEventListener("click", function () {
-    modalCart.classList.remove("show");
-    console.log("clicado")
-  }) */
 }
 
 toggleNav();
 openCart();
+
+

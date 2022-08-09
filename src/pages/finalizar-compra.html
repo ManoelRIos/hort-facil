@@ -55,6 +55,7 @@
 
       <section class="categories">
         <div class="container cat">
+          <button class="btnCloseNav">X</button>    
           <a href="produtos.html">Ofertas</a>
           <a href="produtos.html">Verduras</a>
           <a href="produtos.html">Legumes</a>
@@ -259,5 +260,65 @@
         <p>É proibida a venda de produtos alcoólicos para menores de 18 anos</p>
       </div>
     </footer>
+
+    <div id="modal">
+      <div id="modal-cart">   
+        <div class="modal-header">
+          <button class="close-modal">x</button>
+          <p>Carrinho</p>
+        </div>
+    
+        <div class="modal-body">
+          <div class="cart-item">
+            <div class="image">
+              <img src="../../public/images/rabanete.svg" alt="">
+              <div class="button-group">            
+                <button>-</button>
+                <button>+</button>
+              </div>
+            </div>
+    
+            <div class="cart-text">
+              <p>Queijo Curado 300g (Fazenda Alegria)</p>
+              <button><img src="../../public/icons/remove.svg" alt="Remover"></button>
+              <p>R$ 7,50</p>                    
+            </div>                  
+          </div>
+    
+          <div class="divider"></div>
+    
+          <div class="cart-item">
+            <div class="image">
+              <img src="../../public/images/rabanete.svg" alt="">
+              <div class="button-group">            
+                <button>-</button>
+                <button>+</button>
+              </div>
+            </div>
+    
+            <div class="cart-text">
+              <p>Queijo Curado 300g (Fazenda Alegria)</p>
+              <button><img src="../../public/icons/remove.svg" alt="Remover"></button>
+              <p>R$ 7,50</p>                    
+            </div>                  
+          </div>
+                
+        </div>    
+        
+        <div class="modal-footer">
+          <div class="footer-text">
+            <span class="qtd-item">2 Itens</span>
+            <span class="price">R$ 107,30</span>
+          </div>      
+          
+          <div class="btn-group">
+            <button onclick="location.href='produtos.html';" class="btn-outlined">Continuar Comprando</button>
+            <button onclick="location.href='carrinho.html';" class="btn-default">Finalizar Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
 
   </body>
