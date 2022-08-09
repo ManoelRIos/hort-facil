@@ -201,5 +201,10 @@ section.user-data, section.payment, section.close-purchase{
   .user-data, .payment, .close-purchase{
     width: 100% !important;
   }
+
+  .close-purchase .total-value{
+    position: inherit;
+    width: 100%;
+  }
   
 }
