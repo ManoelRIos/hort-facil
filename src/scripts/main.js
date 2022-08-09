@@ -17,18 +17,19 @@ const swiper = new Swiper(".swiper", {
 });
 
 function toggleNav() {
-  const nav = document.querySelector("#modal");
-  const btnOpen = document.querySelector(".nav-bar .icon-nav");
-  const btnClose = document.querySelector(".close-modal");
+  const nav = document.querySelector(".cat");
+  const btnOpenNav = document.querySelector(".nav-bar .icon-nav");  
+  const btnCloseNav = document.querySelector(".cat .btnCloseNav");
 
-  btnOpen.addEventListener("click", function () {
-    nav.classList.add("show");
-    console.log("clicked");
+  btnOpenNav.addEventListener("click", function () {        
+    nav.classList.add("active");     
   });
 
-  btnClose.addEventListener("click", function () {
-    modalCart.classList.remove("show");
-  });
+  btnCloseNav.addEventListener("click", function () {
+    nav.classList.remove("active");
+  })
+  
+
 }
 
 function openCart() {

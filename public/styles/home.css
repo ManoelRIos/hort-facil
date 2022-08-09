@@ -76,6 +76,13 @@ header .categories .cat{
   justify-content: space-between;
 }
 
+.categories .cat .btnCloseNav{    
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+}
+
 header .categories .cat a, span{
   color: var(--black);
   font-size: 1.4rem;
@@ -636,33 +643,64 @@ header .categories .cat span button:hover{
   }
 
   header .categories .cat{
-    justify-content: center;
+    justify-content: center; 
+    text-align: center;  
+    transition: .2s; 
   }
   
-  .categories .cat a:nth-child(-n + 5){    
+  .categories .cat a, .btnCloseNav{    
     display: none;
     opacity: 0;
     visibility: hidden;
     top: -20rem;
   }
 
- /*  .categories .cat.show{
-    z-index: 100;
-    display: fixed;    
+  .categories .cat.active a{
+    display: block;    
+    opacity: 1;
+    visibility: visible;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .categories .cat.active .btnCloseNav{
+    display: block;    
+    opacity: 1;
+    visibility: visible;
+    font-size: 3rem;  
+    background-color: transparent;  
     position: absolute;
-    background-color: white;
+    top: 30px;
+    left: 30px;
+    transition: .2s;
+  }
+
+  .categories .cat.active .btnCloseNav:hover{
+    color: var(--light-green);
+    transform: translateY(-10px);
+  }
+
+  .categories .cat.active span{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+  }
+
+  .categories .cat.active{
+    z-index: 10;
+    background: white;
     width: 100vw;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+    transition: .2s;
+  }
 
-  } */
-  
-/*   .categories .cat.show a:nth-child(-n + 5){    
-    opacity: 1;
-    visibility: visible;    
-  } */
-
-  .slider{
-    /* height: 100%; */
+  .slider{    
     padding: 0;
   }
 
