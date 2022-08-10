@@ -783,11 +783,34 @@ header .categories .cat span button:hover{
 
 @media (max-width: 482px) {
 
+  .info .cards-info{
+    display: grid;    
+    grid-template-areas: 
+    "card-info1 card-info2" 
+    "card-info3 card-info3 ";    
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .info .card-info:nth-child(1){
+    grid-area: "card-info1";
+  }
+
+  .info .card-info:nth-child(2){
+    grid-area: "card-info2";
+  }
+
+  .info .card-info:nth-child(3){
+    grid-area: "card-info3";    
+    margin-left: 50%;
+  }
+
+
+
   .products .product-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }  
-
 
   #modal.show #modal-cart .modal-body .cart-item .cart-text p{
     max-width: 18rem;
