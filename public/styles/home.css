@@ -782,6 +782,13 @@ header .categories .cat span button:hover{
 }
 
 @media (max-width: 482px) {
+
+  .products .product-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }  
+
+
   #modal.show #modal-cart .modal-body .cart-item .cart-text p{
     max-width: 18rem;
   }
