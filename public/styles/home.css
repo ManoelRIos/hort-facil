@@ -805,8 +805,6 @@ header .categories .cat span button:hover{
     margin-left: 50%;
   }
 
-
-
   .products .product-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
