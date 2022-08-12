@@ -25,6 +25,7 @@ header .nav-bar{
 }
 
 header .nav .nav-bar .icon-nav, .icon-cart{
+  display: none;
   opacity: 0;
   visibility: hidden;
   top: -20rem;
@@ -622,6 +623,7 @@ header .categories .cat span button:hover{
   }
 
   header .nav .nav-bar .icon-nav, .icon-cart{
+    display: flex;
     opacity: 1;
     visibility: visible;  
   }
