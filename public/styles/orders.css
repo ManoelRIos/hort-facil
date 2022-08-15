@@ -129,4 +129,11 @@ main {
 .order-status .text-status{
   width: 9rem;
   text-align: center;
+  color: #999;
+  font-size: 1.4rem;
+}
+
+.order-status .text-status p:nth-child(2){  
+  padding-top: .7rem;
+  font-size: 1.1rem;
 }
