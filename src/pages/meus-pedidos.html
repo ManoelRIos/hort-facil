@@ -2,11 +2,11 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hort Fácil</title>
-    
+
     <!-- Adiciona descrição do site  -->
-    <meta name="description" content="">
+    <meta name="description" content="" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,10 +17,9 @@
     />
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="../../public/styles/global.css" />    
-    <link rel="stylesheet" href="../../public/styles/home.css" />        
+    <link rel="stylesheet" href="../../public/styles/global.css" />
+    <link rel="stylesheet" href="../../public/styles/home.css" />
     <link rel="stylesheet" href="../../public/styles/orders.css" />
-    
   </head>
 
   <body>
@@ -34,7 +33,9 @@
       <!-- Navbar -->
       <section class="container nav">
         <div class="nav-bar">
-          <button class="icon-nav"><img src="../../public/icons/nav.svg" alt=""></button>
+          <button class="icon-nav">
+            <img src="../../public/icons/nav.svg" alt="" />
+          </button>
           <a href="/">
             <img
               src="../../public/images/logo-hort-facil.svg"
@@ -42,7 +43,9 @@
               class="logo"
             />
           </a>
-          <button class="icon-cart"><img src="../../public/icons/cart-nav.svg" alt=""></button>
+          <button class="icon-cart">
+            <img src="../../public/icons/cart-nav.svg" alt="" />
+          </button>
           <div class="search">
             <input type="text" placeholder="Pesquisar por:" />
           </div>
@@ -55,7 +58,7 @@
 
       <section class="categories">
         <div class="container cat">
-          <button class="btnCloseNav">X</button>    
+          <button class="btnCloseNav">X</button>
           <a href="produtos.html">Ofertas</a>
           <a href="produtos.html">Verduras</a>
           <a href="produtos.html">Legumes</a>
@@ -68,16 +71,19 @@
           </span>
         </div>
       </section>
-    </header> 
+    </header>
 
     <main>
       <div class="my-orders container">
         <div class="orders">
           <h2>Meus pedidos</h2>
           <div class="order-card">
-            <div class="dropdown-info">
+            <div class="dropdown-info">              
               <p>
-                <img src="../../public/icons/dropdown-icon.svg" alt="expandir informações">
+                <img class="dropdown-icon"
+                  src="../../public/icons/dropdown-icon.svg"
+                  alt="expandir informações"
+                />
                 oba, pedido entregue
               </p>
               <p>entrega dia <span>15/set</span></p>
@@ -85,19 +91,55 @@
 
             <div class="divider"></div>
 
-            <div class="order-info">
-              <img src="../../public/images/batata-doce.svg" alt="">
+            <div class="order-info">              
+              <img src="../../public/images/batata-doce.svg" alt="" />
               <div class="text">
                 <p>abóbora (500g)</p>
                 <p>1 unidade</p>
               </div>
+            </div>
 
-              <div class="order-status">
-                
+            <div class="order-status">
+
+              <div class="line-status">
+                <div class="bullet"></div>
+                <div class="line"></div>
+
+                <div class="bullet"></div>
+                <div class="line"></div>
+
+                <div class="bullet"></div>
+                <div class="line"></div>
+
+                <div class="like-icon">
+                  <img src="../../public/icons/like-icon.svg" alt="">
+                </div>                    
               </div>
+
+              <div class="status">
+                <div class="text-status">
+                  <p>Pedido recebido</p>
+                  <p>28/ago 09:28</p>
+              </div>              
+              
+              <div class="text-status">
+                <p>Pedido aprovado</p>
+                <p>28/ago 09:32</p>
+              </div>              
+             
+              <div class="text-status">
+                 <p>Em transporte</p>
+                 <p>31/ago 18:08</p>
+              </div>
+
+              <div class="text-status">
+                <p>Pedido entregue</p>
+                <p>15/set 11:52</p>
+              </div>  
+              </div>                          
             </div>
           </div>
-        </div>        
+        </div>
       </div>
     </main>
 
@@ -161,69 +203,84 @@
 
       <div class="card-types">
         <h2>Aceitamos</h2>
-        <img src="../../public/images/img-cards.png" alt="" />
+        <img src="../../public/images/card-up.svg" alt="" />
+        <img src="../../public/images/card-down.svg" alt="" />
         <p>É proibida a venda de produtos alcoólicos para menores de 18 anos</p>
       </div>
     </footer>
 
     <div id="modal">
-      <div id="modal-cart">   
+      <div id="modal-cart">
         <div class="modal-header">
           <button class="close-modal">x</button>
           <p>Carrinho</p>
         </div>
-    
+
         <div class="modal-body">
           <div class="cart-item">
             <div class="image">
-              <img src="../../public/images/rabanete.svg" alt="">
-              <div class="button-group">            
+              <img src="../../public/images/rabanete.svg" alt="" />
+              <div class="button-group">
                 <button>-</button>
                 <button>+</button>
               </div>
             </div>
-    
+
             <div class="cart-text">
               <p>Queijo Curado 300g (Fazenda Alegria)</p>
-              <button><img src="../../public/icons/remove.svg" alt="Remover"></button>
-              <p>R$ 7,50</p>                    
-            </div>                  
+              <button>
+                <img src="../../public/icons/remove.svg" alt="Remover" />
+              </button>
+              <p>R$ 7,50</p>
+            </div>
           </div>
-    
+
           <div class="divider"></div>
-    
+
           <div class="cart-item">
             <div class="image">
-              <img src="../../public/images/rabanete.svg" alt="">
-              <div class="button-group">            
+              <img src="../../public/images/rabanete.svg" alt="" />
+              <div class="button-group">
                 <button>-</button>
                 <button>+</button>
               </div>
             </div>
-    
+
             <div class="cart-text">
               <p>Queijo Curado 300g (Fazenda Alegria)</p>
-              <button><img src="../../public/icons/remove.svg" alt="Remover"></button>
-              <p>R$ 7,50</p>                    
-            </div>                  
+              <button>
+                <img src="../../public/icons/remove.svg" alt="Remover" />
+              </button>
+              <p>R$ 7,50</p>
+            </div>
           </div>
-                
-        </div>    
-        
+        </div>
+
         <div class="modal-footer">
           <div class="footer-text">
             <span class="qtd-item">2 Itens</span>
             <span class="price">R$ 107,30</span>
-          </div>      
-          
+          </div>
+
           <div class="btn-group">
-            <button onclick="location.href='produtos.html';" class="btn-outlined">Continuar Comprando</button>
-            <button onclick="location.href='carrinho.html';" class="btn-default">Finalizar Compra</button>
+            <button
+              onclick="location.href='produtos.html';"
+              class="btn-outlined"
+            >
+              Continuar Comprando
+            </button>
+            <button
+              onclick="location.href='carrinho.html';"
+              class="btn-default"
+            >
+              Finalizar Compra
+            </button>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="../scripts/orders.js"></script>
     <script src="../scripts/main.js"></script>
-  </body> 
+  </body>
 </html>
