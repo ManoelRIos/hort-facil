@@ -1,4 +1,17 @@
 /* HOME */
+
+function login(){
+  isLogged = true;
+  const popup = document.querySelector(".nav-bar .login-info");  
+  const btnLogin = document.querySelector(".nav-bar .btn-login")
+
+  if(isLogged){
+    popup.classList.add("logged")    
+    btnLogin.classList.add("logged")    
+  }  
+
+}
+
 function toggleNav() {
   const nav = document.querySelector(".cat");
   const btnOpenNav = document.querySelector(".nav-bar .icon-nav");  
@@ -29,6 +42,7 @@ function openCart() {
 
 }
 
+login();
 toggleNav();
 openCart();
 

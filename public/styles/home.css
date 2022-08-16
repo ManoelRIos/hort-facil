@@ -67,6 +67,64 @@ header .nav-bar .link:hover{
   color: var(--black);
 }
 
+/* USER INFO */
+header .nav-bar .btn-login.logged{
+  display: none;   
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;  
+}
+
+header .login-info{
+  display: none;   
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;  
+}
+
+header .login-info.logged{
+  display: flex;  
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+}
+
+header .login-info .user-icon img{ 
+  background-color: var(--green);
+  clip-path: circle();
+  padding: .7rem;
+  margin-right: .9rem;
+}
+
+header .login-info .dropdown-user img{ 
+  cursor: pointer;
+}
+
+header .popup-user{
+  display: none;   
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;  
+}
+
+header .popup-user.logged{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  position: absolute;
+  right: 12%;
+  top: 16%;  
+  z-index: 100;  
+
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+header .popup-user .btn-outlined{
+  border: 0;  
+}
+
 header .categories{
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0 , 0, 0, 0.26);

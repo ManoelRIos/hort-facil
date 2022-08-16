@@ -83,8 +83,7 @@ main {
   display: none;   
   opacity: 0;
   visibility: hidden;
-  top: -20rem;
-  transition: 0.2s;  
+  top: -20rem;  
 }
 
 .order-status.open{
