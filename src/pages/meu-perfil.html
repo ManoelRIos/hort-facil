@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <title>Hort Fácil</title>
+    
+    <!-- Adiciona descrição do site  -->
+    <meta name="description" content="">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../public/styles/global.css" />
+    <link rel="stylesheet" href="../../public/styles/home.css" />
+    <link rel="stylesheet" href="../../public/styles/profile.css" />    
+  </head>
+
+  <body>
+    <header>
+      <!-- Green line -->
+      <div class="green-line">
+        <span>Frete grátis nas compras acima de R$ 220,00</span>
+      </div>
+      <!-- Navbar -->
+      <section class="container nav">
+        <div class="nav-bar">
+          <button class="icon-nav"><img src="../../public/icons/nav.svg" alt=""></button>
+          <a href="">
+            <img
+              src="../../public/images/logo-hort-facil.svg"
+              alt="Logo da Hort Fácil"
+              class="logo"
+            />
+          </a>
+          <button class="icon-cart"><img src="../../public/icons/cart-nav.svg" alt=""></button>
+          <div class="search">
+            <input type="text" placeholder="Pesquisar por:" />
+          </div>
+
+          <a class="link" href="../../src/pages/sobre.html">Sobre nós</a>
+          <a class="link" href="">Ajuda</a>
+          <a class="link btn-login" href="../../src/pages/login.html">Entrar</a>
+
+          <div class="login-info">
+            <div class="user-icon">
+              <img src="../../public/icons/user-icon.svg" alt="">
+            </div>            
+            <div class="dropdown-user">
+              <p>olá, Fernando</p>
+              minha conta
+              <img src="../../public/icons/user-icon-dropdown.svg" alt="">
+            </div>            
+          </div>
+
+          <div class="popup-user">
+            <a class="btn-outlined" href="meus-pedidos.html">Meus pedidos</a>
+            <a class="btn-outlined" href="">Perfil</a>
+            <a class="btn-outlined" id="endAccount" href="">Sair </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="container cat">
+          <button class="btnCloseNav">X</button>        
+          <a href="produtos.html">Ofertas</a>
+          <a href="produtos.html">Verduras</a>
+          <a href="produtos.html">Legumes</a>
+          <a href="produtos.html">Frutas</a>
+          <a href="produtos.html">Especiarias</a>
+          <span
+            >Entregar em <span>estado de Minas Gerais</span>
+            <!-- será alterado a partir do botão -->
+            <button>(alterar)</button>
+          </span>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <div class="profile-card">
+        <h2>Meu perfil</h2>        
+        <form class="datas" action="submit">                              
+          <div class="first-input-line">
+            <div class="input">
+              <label for="first-name">Nome</label>            
+              <input type="text" id="first-name">
+            </div>
+            <div class="input">
+              <label for="last-name">Sobrenome</label>
+              <input type="text" id="last-name">                                                     
+            </div>
+            <div class="input">
+              <label for="cpf">CPF</label> 
+              <input type="text" id="cpf">
+            </div>
+          </div> 
+
+          <div class="second-input-line">
+            <div class="input">
+              <div class="cep">            
+                <label for="cep">CEP</label>
+                <p>Não sabe seu CEP? <a href="">Clique aqui</a></p>                        
+              </div>            
+              <input type="text" id="cep">
+            </div>
+            <div class="input">
+              <label for="adress">Endereço</label>
+              <input type="text" id="adress">
+            </div>
+            <div class="input">
+              <label for="number">Número</label>
+              <input type="text" id="number">
+            </div>
+          </div>
+
+          <div class="third-input-line">
+            <div class="input">
+              <label for="state">Estado</label>            
+              <input type="text" id="state">                        
+            </div>
+            <div class="input">
+              <label for="city">Cidade</label>            
+              <input type="text" id="city">
+            </div>
+          </div> 
+
+          <div class="third-input-line">
+            <div class="input">
+              <label for="email">E-mail</label>            
+              <input type="email" id="email">            
+            </div>
+            <div class="input">
+              <label for="phone">Telefone</label>            
+              <input type="number" id="phone">
+            </div>
+          </div>
+
+          <div class="password-input">
+            <label for="password">Senha <a href="">Alterar senha</a></label>            
+            <input type="password" id="password">  
+          </div>
+          
+          <div class="save">
+            <button class="btn-outlined">Salvar alterações</button>  
+          </div>          
+        </form>                                                  
+      </div>
+    </main>
+    
+    <footer id="footer" class="container">
+      <div class="info-locality">
+        <div class="logo">
+          <img src="../../public/images/logo-hort-facil.svg" alt="" />
+        </div>
+        <p>
+          Somos uma plataforma digital de produtos que conecta pequenos
+          produtores rurais a consumidores urbanos.
+        </p>
+        <p>Endereço: Rua Teste, 761 - Minas</p>
+        <p>CNPJ: 00.000.000/0001-30</p>
+      </div>
+      <div class="contacts">
+        <h2>Nossos contatos</h2>
+        <div class="contact">
+          <p>
+            <img src="../../public/icons/whatsapp.svg" alt="Ícone do whatsapp" />
+            Whatsapp
+            <span>(apenas mensagem)</span>
+          </p>
+
+          <p>(21) 11111-1111</p>
+        </div>
+        <div class="contact">
+          <p>
+            <img src="../../public/icons/email.svg" alt="Ícone de email" />
+            E-mail
+          </p>
+          <p>contato@xxxx.com.br</p>
+        </div>
+      </div>
+
+      <div class="socials">
+        <h2>Nossas redes</h2>
+        <div class="social">
+          <a href=""><img src="../../public/icons/facebook.svg" alt="" /></a>
+          <a href=""><img src="../../public/icons/instagram.svg" alt="" /></a>
+          <a href=""><img src="../../public/icons/linkedin.svg" alt="" /></a>
+          <a href=""><img src="../../public/icons/youtube.svg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="info-map">
+        <h2>Mapa do site</h2>
+        <p>Sobre nós</p>
+        <p>Mercado</p>
+      </div>
+
+      <div class="important-links">
+        <h2>Links importantes</h2>
+        <p>Política de privacidade</p>
+        <p>Termos de uso</p>
+        <p>Política de troca</p>
+      </div>
+
+      <div class="card-types">
+        <h2>Aceitamos</h2>
+        <img src="../../public/images/card-up.svg" alt="" />
+        <img src="../../public/images/card-down.svg" alt="" />
+        <p>É proibida a venda de produtos alcoólicos para menores de 18 anos</p>
+      </div>
+    </footer>
+
+    <div id="modal">
+      <div id="modal-cart">   
+        <div class="modal-header">
+          <button class="close-modal">x</button>
+          <p>Carrinho</p>
+        </div>
+    
+        <div class="modal-body">
+          <div class="cart-item">
+            <div class="image">
+              <img src="../../public/images/rabanete.svg" alt="">
+              <div class="button-group">            
+                <button>-</button>
+                <button>+</button>
+              </div>
+            </div>
+    
+            <div class="cart-text">
+              <p>Queijo Curado 300g (Fazenda Alegria)</p>
+              <button><img src="../../public/icons/remove.svg" alt="Remover"></button>
+              <p>R$ 7,50</p>                    
+            </div>                  
+          </div>
+    
+          <div class="divider"></div>
+    
+          <div class="cart-item">
+            <div class="image">
+              <img src="../../public/images/rabanete.svg" alt="">
+              <div class="button-group">            
+                <button>-</button>
+                <button>+</button>
+              </div>
+            </div>
+    
+            <div class="cart-text">
+              <p>Queijo Curado 300g (Fazenda Alegria)</p>
+              <button><img src="../../public/icons/remove.svg" alt="Remover"></button>
+              <p>R$ 7,50</p>                    
+            </div>                  
+          </div>
+                
+        </div>    
+        
+        <div class="modal-footer">
+          <div class="footer-text">
+            <span class="qtd-item">2 Itens</span>
+            <span class="price">R$ 107,30</span>
+          </div>      
+          
+          <div class="btn-group">
+            <button onclick="location.href='produtos.html';" class="btn-outlined">Continuar Comprando</button>
+            <button onclick="location.href='carrinho.html';" class="btn-default">Finalizar Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- SWIPPER -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>    
+    <!-- SCRIPTS -->
+    <script src="../scripts/slider.js"></script>
+    <script src="../scripts/main.js"></script>
+        
+  </body>
+</html>

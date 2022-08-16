@@ -96,7 +96,7 @@ header .login-info .user-icon img{
   margin-right: .9rem;
 }
 
-header .login-info .dropdown-user img{ 
+header .login-info .dropdown-user{ 
   cursor: pointer;
 }
 
@@ -109,6 +109,8 @@ header .popup-user{
 
 header .popup-user.logged{
   display: grid;
+  opacity: 1;
+  visibility: visible;
   grid-template-columns: 1fr;
   text-align: center;
   position: absolute;
