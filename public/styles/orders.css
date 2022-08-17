@@ -136,3 +136,18 @@ main {
   padding-top: .7rem;
   font-size: 1.1rem;
 }
+
+@media(max-width: 510px){
+
+  .order-status .status{    
+    gap: 1rem;
+    width: 100%;    
+  }
+
+  .order-status .text-status{    
+    gap: 1rem;
+    width: 100%;    
+    font-size: 1.3rem;
+  }
+
+}
