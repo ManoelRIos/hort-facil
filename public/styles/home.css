@@ -96,7 +96,11 @@ header .login-info .user-icon img{
   margin-right: .9rem;
 }
 
+header .login-info a, p{  
+}
+
 header .login-info .dropdown-user{ 
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -659,6 +663,9 @@ header .categories .cat span button:hover{
 }
 
 #modal.show #modal-cart .modal-footer .btn-group{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
 }
 
@@ -666,7 +673,6 @@ header .categories .cat span button:hover{
   padding: 1.5rem 1.2rem;
   width: 15rem;
 }
-
 
 @media (max-width: 992px) {
 
@@ -875,6 +881,29 @@ header .categories .cat span button:hover{
   #modal.show #modal-cart .modal-body .cart-item .cart-text p{
     max-width: 18rem;
   }
+
+  #modal.show #modal-cart .modal-footer .btn-group .btn-default, .btn-outlined{    
+    font-size: 1.3rem;
+    padding-left: 1rem;    
+    padding-right: 1rem;    
+  }  
+}
+
+@media (max-width: 461px) {
+  .info .cards-info{    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;        
+  }
+
+  .info .cards-info .card-info{  
+    margin: 0;
+  }
+
+  .products .product-content{    
+    display: flex;
+    justify-content: center;    
+  }  
 }
 
 
