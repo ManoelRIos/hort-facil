@@ -32,13 +32,16 @@ function toggleNav() {
   const nav = document.querySelector(".cat");
   const btnOpenNav = document.querySelector(".nav-bar .icon-nav");  
   const btnCloseNav = document.querySelector(".cat .btnCloseNav");
+  const menu = document.querySelector(".nav-bar .menu");
 
   btnOpenNav.addEventListener("click", function () {        
-    nav.classList.add("active");     
+    nav.classList.add("active");   
+    menu.classList.add("active")  
   });
 
   btnCloseNav.addEventListener("click", function () {
     nav.classList.remove("active");
+    menu.classList.remove("active")  
   })
 }
 
