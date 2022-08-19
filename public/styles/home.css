@@ -724,6 +724,7 @@ header .categories .cat span button:hover{
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
+    gap: 2rem;
     text-align: center; 
     position: fixed; 
     z-index: 101;
@@ -971,6 +972,12 @@ header .categories .cat span button:hover{
     width: 150px;    
     grid-area: info-locality;
   }
+}
+
+@media (max-width: 320px) {
+  #footer .card-types img{
+    width: 200px;
+  }  
 }
 
 
