@@ -9,21 +9,12 @@ function login(){
 
   if(isLogged){
     loginInfo.classList.add("logged")    
-    btnLogin.classList.add("logged")   
-
-    const endAccount = document.querySelector("#endAccount")
+    btnLogin.classList.add("logged")       
     var popupOpen = false
 
     btnUserDropdown.addEventListener("click", () => {      
-      popupOpen = !popupOpen
-      console.log("clicado")
+      popupOpen = !popupOpen      
       popupOpen ?  popupUser.classList.add("logged") :  popupUser.classList.remove("logged")
-    })
-
-    endAccount.addEventListener("click", () => {
-      loginInfo.classList.remove("logged")    
-      btnLogin.classList.remove("logged")   
-      isLogged = false;
     })    
   }  
 }
@@ -34,12 +25,12 @@ function toggleNav() {
   const btnCloseNav = document.querySelector(".cat .btnCloseNav");
   const menu = document.querySelector(".nav-bar .menu");
 
-  btnOpenNav.addEventListener("click", function () {        
+  btnOpenNav.addEventListener("click",  () => {        
     nav.classList.add("active");   
     menu.classList.add("active")  
   });
 
-  btnCloseNav.addEventListener("click", function () {
+  btnCloseNav.addEventListener("click", () => {
     nav.classList.remove("active");
     menu.classList.remove("active")  
   })
@@ -51,11 +42,11 @@ function openCart() {
   const btnClose = document.querySelector(".close-modal");
   /* const clickOut = document.querySelector("#modal") */
 
-  btnOpen.addEventListener("click", function () {
+  btnOpen.addEventListener("click", () => {
     modalCart.classList.add("show");    
   });
 
-  btnClose.addEventListener("click", function () {
+  btnClose.addEventListener("click", () => {
     modalCart.classList.remove("show");
   });
 
