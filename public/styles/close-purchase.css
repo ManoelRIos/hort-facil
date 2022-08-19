@@ -46,6 +46,7 @@ form.datas{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 2rem;  
 }
 
 form.datas p.title{
@@ -151,10 +152,6 @@ section.user-data, section.payment, section.close-purchase{
   color: var(--green);
 }
 
-.close-purchase{
-  width: 10px;
-}
-
 .close-purchase p.order-title{
   color: var(--text-color);
   font-size: 1.4rem;
@@ -173,7 +170,7 @@ section.user-data, section.payment, section.close-purchase{
   display: flex;
   justify-content: space-between;
   align-items: center;  
-  width: 35rem;
+  width: 105%;
   padding: 0 1rem;
   margin-bottom: 1.4rem;
   background-color: #F5F6EE;  
@@ -191,11 +188,15 @@ section.user-data, section.payment, section.close-purchase{
   font-weight: 400;
 }
 
+@media (max-width: 1440px){
+  form.datas{      
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 1200px) {
   form.datas{
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;        
   }
 
   .user-data, .payment, .close-purchase{
@@ -205,6 +206,5 @@ section.user-data, section.payment, section.close-purchase{
   .close-purchase .total-value{
     position: inherit;
     width: 100%;
-  }
-  
+  }   
 }
